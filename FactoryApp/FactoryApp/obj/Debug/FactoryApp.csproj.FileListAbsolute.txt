@@ -1,0 +1,15 @@
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp.csproj.AssemblyReference.cache
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\Views\Login.g.cs
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\App.g.cs
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp_MarkupCompile.cache
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp_MarkupCompile.lref
+D:\FactoryProject\FactoryApp\FactoryApp\bin\Debug\FactoryApp.exe.config
+D:\FactoryProject\FactoryApp\FactoryApp\bin\Debug\FactoryApp.exe
+D:\FactoryProject\FactoryApp\FactoryApp\bin\Debug\FactoryApp.pdb
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\Views\Login.baml
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp.g.resources
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp.Properties.Resources.resources
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp.csproj.GenerateResource.cache
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp.csproj.CoreCompileInputs.cache
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp.exe
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp.pdb
