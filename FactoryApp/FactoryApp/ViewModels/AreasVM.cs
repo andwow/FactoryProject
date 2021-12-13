@@ -26,9 +26,9 @@ namespace FactoryApp.ViewModels
             foreach (DataRow row in dt.Rows)
             {
                 Area area = new Area();
-                area.ID = (int)row["ID"];
-                area.Name = (string)row["Name"];
-                area.Description = (string)row["Description"];
+                area.ID = (int)row["area_id"];
+                area.Name = (string)row["area_name"];
+                area.Description = (string)row["area_description"];
                 Areas.Add(area);
             }
             con.Close();
