@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
+using FactoryApp.Models;
 
 namespace FactoryApp.Views
 {
@@ -30,33 +31,37 @@ namespace FactoryApp.Views
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //Connection String   
-            SqlConnection con = new SqlConnection("Data Source=COSMIN-ACER;Initial Catalog=Factory;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand("select * from Userlogins where UserName=@UserName and Password =@Password", con);
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-I78MCPL;Initial Catalog=Factory;Integrated Security=True");
+            SqlCommand cmd = new SqlCommand("select * from Employee where username=@UserName and password =@Password", con);
             cmd.Parameters.AddWithValue("@UserName", username.Text);
-            cmd.Parameters.AddWithValue("@Password", password.Text);
+            cmd.Parameters.AddWithValue("@Password", password.Password);
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             //Connection open here   
             con.Open();
             int i = cmd.ExecuteNonQuery();
-            con.Close();
+            
             if (dt.Rows.Count > 0)
             {
-                MessageBox.Show("Successfully loged in");
-                //after successful it will redirect  to next page .  
-                //WelcomePage settingsForm = new WelcomePage();
-                //settingsForm.Show();
+                Employee user = new Employee();
+                user.Cnp        = (string)dt.Rows[0]["employee_cnp"];
+                user.FirstName  = (string)dt.Rows[0]["employee_first_name"];
+                user.LastName   = (string)dt.Rows[0]["employee_last_name"];
+                user.Username   = (string)dt.Rows[0]["username"];
+                user.Gender     = (string)dt.Rows[0]["employee_gender"];
+                user.Birthday   = (DateTime)dt.Rows[0]["employee_birthday"];
+                user.Salary     = (double)dt.Rows[0]["employee_salary"];
+                user.Role       = (int)dt.Rows[0]["role_id"];
+
+                MainMenu mainMenu = new MainMenu(user, con);
+                mainMenu.Show();
             }
             else
             {
                 MessageBox.Show("Please enter Correct Username and Password");
             }
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            con.Close();
         }
     }
 }

@@ -28,3 +28,8 @@ C:\Users\cosmi\Documents\GitHub\FactoryProject\FactoryApp\FactoryApp\obj\Debug\F
 C:\Users\cosmi\Documents\GitHub\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp.Properties.Resources.resources
 C:\Users\cosmi\Documents\GitHub\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp.csproj.GenerateResource.cache
 C:\Users\cosmi\Documents\GitHub\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp.csproj.CoreCompileInputs.cache
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp.csproj.SuggestedBindingRedirects.cache
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\Views\MainMenu.g.cs
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\Views\MainMenu.baml
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\Views\Areas.g.cs
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\Views\Areas.baml
