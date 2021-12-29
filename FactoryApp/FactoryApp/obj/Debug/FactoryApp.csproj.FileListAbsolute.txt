@@ -28,8 +28,13 @@ C:\Users\cosmi\Documents\GitHub\FactoryProject\FactoryApp\FactoryApp\obj\Debug\F
 C:\Users\cosmi\Documents\GitHub\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp.Properties.Resources.resources
 C:\Users\cosmi\Documents\GitHub\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp.csproj.GenerateResource.cache
 C:\Users\cosmi\Documents\GitHub\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp.csproj.CoreCompileInputs.cache
-D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\FactoryApp.csproj.SuggestedBindingRedirects.cache
 D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\Views\MainMenu.g.cs
 D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\Views\MainMenu.baml
-D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\Views\Areas.g.cs
-D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\Views\Areas.baml
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\UserControls\Areas.g.cs
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\UserControls\Plants.g.cs
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\UserControls\Areas.baml
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\UserControls\Plants.baml
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\UserControls\Lines.g.cs
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\UserControls\LineScreen.g.cs
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\UserControls\Lines.baml
+D:\FactoryProject\FactoryApp\FactoryApp\obj\Debug\UserControls\LineScreen.baml

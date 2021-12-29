@@ -54,8 +54,9 @@ namespace FactoryApp.Views
                 user.Salary     = (double)dt.Rows[0]["employee_salary"];
                 user.Role       = (int)dt.Rows[0]["role_id"];
 
-                MainMenu mainMenu = new MainMenu(user, con);
+                MainMenu mainMenu = new MainMenu(user);
                 mainMenu.Show();
+                this.Close();
             }
             else
             {

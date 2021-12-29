@@ -1,4 +1,5 @@
 ﻿using FactoryApp.Models;
+using FactoryApp.UserControls;
 using FactoryApp.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -23,38 +24,17 @@ namespace FactoryApp.Views
     /// </summary>
     public partial class MainMenu : Window
     {
-        public MainMenu(Employee user, SqlConnection con)
+        public MainMenu(Employee user)
         {
-            this.DataContext = new MainMenuVM(user);
+            //this.DataContext = new PlantsVM(user);
             InitializeComponent();
+            Screens = new Stack<UserControl>();
+            Plants plants = new Plants(user, Screens, Screen);
+            Screens.Push(plants);
+            Screen.Children.Add(plants);
+            //plants.MouseDoubleClick += new MouseButtonEventHandler(DataGrid_MouseDoubleClick);
         }
-
-        private void DataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            try
-            {
-                if (sender != null)
-                {
-                    DataGrid grid = sender as DataGrid;
-                    if (grid != null && grid.SelectedItems != null && grid.SelectedItems.Count == 1)
-                    {
-                        //This is the code which helps to show the data when the row is double clicked.
-                        DataGridRow dgr = grid.ItemContainerGenerator.ContainerFromItem(grid.SelectedItem) as DataGridRow;
-                        Plant dr = (Plant)dgr.Item;
-
-                        int plantId = dr.ID;
-                        Areas areas = new Areas(plantId);
-                        areas.Show();
-                    }
-
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message.ToString());
-            }
-        }
+        Stack<UserControl> Screens { get; }
     }
 
 }

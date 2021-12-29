@@ -56,17 +56,42 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\Area.cs" />
+    <Compile Include="Models\Line.cs" />
     <Compile Include="Models\ModelBase.cs" />
     <Compile Include="Models\Plant.cs" />
-    <Compile Include="ViewModels\AreasVM.cs" />
-    <Compile Include="ViewModels\MainMenuVM.cs" />
-    <Compile Include="Views\Areas.xaml.cs">
+    <Compile Include="Models\Producivity.cs" />
+    <Compile Include="UserControls\Areas.xaml.cs">
       <DependentUpon>Areas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Lines.xaml.cs">
+      <DependentUpon>Lines.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LineScreen.xaml.cs">
+      <DependentUpon>LineScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Plants.xaml.cs">
+      <DependentUpon>Plants.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\AreasVM.cs" />
+    <Compile Include="ViewModels\LineScreenVM.cs" />
+    <Compile Include="ViewModels\LinesVM.cs" />
+    <Compile Include="ViewModels\PlantsVM.cs" />
     <Compile Include="Views\MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
-    <Page Include="Views\Areas.xaml">
+    <Page Include="UserControls\Areas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Lines.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\LineScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Plants.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

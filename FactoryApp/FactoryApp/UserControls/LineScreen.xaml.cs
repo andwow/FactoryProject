@@ -11,19 +11,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FactoryApp.Views
+namespace FactoryApp.UserControls
 {
     /// <summary>
-    /// Interaction logic for Areas.xaml
+    /// Interaction logic for LineScreen.xaml
     /// </summary>
-    public partial class Areas : Window
+    public partial class LineScreen : UserControl
     {
-        public Areas(int plantId)
+        public LineScreen(int lineId, Stack<UserControl> screens, StackPanel screen)
         {
-            this.DataContext = new AreasVM(plantId);
             InitializeComponent();
+            Screen = screen;
+            Screens = screens;
+            DataContext = new LineScreenVM(lineId);
         }
+        private Stack<UserControl> Screens { get; }
+        private StackPanel Screen { get; }
     }
 }

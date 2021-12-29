@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace FactoryApp.ViewModels
 {
-    public class MainMenuVM
+    public class PlantsVM
     {
-        public MainMenuVM(Employee user)
+        public PlantsVM(Employee user)
         {
             this.user = user;
             Plants = new ObservableCollection<Plant>();

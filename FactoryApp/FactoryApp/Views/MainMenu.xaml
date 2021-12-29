@@ -8,21 +8,9 @@
         Title="MainMenu" Height="450" Width="800" Background="LightSkyBlue">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal">
-            <TextBlock Text="Hello,"/>
-            <TextBlock Text="{Binding User.FirstName}" Margin="4 0 0 0"/>
-            <TextBlock Text="{Binding User.LastName}" Margin="4 0 0 0"/>
-        </StackPanel>
-        <DataGrid Grid.Row="2" ItemsSource="{Binding Plants}" IsReadOnly="True" MouseDoubleClick="DataGrid_MouseDoubleClick">
-            <!--<DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding ID}" />
-                <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
-                <DataGridTextColumn Header="Description" Binding="{Binding Description}" />
-            </DataGrid.Columns>-->
-        </DataGrid>
+        <StackPanel Grid.Row="1" x:Name="Screen"/>
     </Grid>
 </Window>

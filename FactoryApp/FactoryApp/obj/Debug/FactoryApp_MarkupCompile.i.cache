@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\FactoryProject\FactoryApp\FactoryApp\App.xaml
-31674822427
+6-230082917
 
-14-1690540083
-13-1310406943
-Views\Areas.xaml;Views\Login.xaml;Views\MainMenu.xaml;
+21-1128445284
+13-1505183044
+UserControls\Areas.xaml;UserControls\Lines.xaml;UserControls\LineScreen.xaml;UserControls\Plants.xaml;Views\Login.xaml;Views\MainMenu.xaml;
 
 False
 
